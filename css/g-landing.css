@@ -78,9 +78,10 @@ body {
 .g-landing-area .flag-area {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 90px;
     padding: 70px 0 0 0;
+    flex-wrap: wrap;
 }
 
 .g-landing-area .flag-area .flag-box {}
@@ -220,10 +221,22 @@ body {
 
 
 
+@media only screen and (min-width : 1024px) and (max-width : 1199px) {
+
+    .g-landing-area .flag-area .flag-box {
+        width: 25%;
+    }
+}
+
+
 @media only screen and (min-width : 768px) and (max-width : 1023px) {
     .g-landing-area .flag-area {
         gap: 50px;
         padding: 20px 0 0 0;
+    }
+
+    .g-landing-area .flag-area .flag-box {
+        width: 35%;
     }
 
 }
@@ -231,6 +244,11 @@ body {
 
 
 @media only screen and (min-width : 150px) and (max-width : 767px) {
+
+    .g-landing-area .flag-area .flag-box {
+        width: 40%;
+    }
+
     .g-landing-area .container {
         width: 90%;
     }
